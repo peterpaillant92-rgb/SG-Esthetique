@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SG Esthétique</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body class="min-h-screen flex flex-col">
+  <!-- Navigation -->
+  <header class="bg-black text-white border-b border-pink-600">
+    <nav class="container mx-auto flex items-center justify-between p-4">
+      <a href="index.html" class="text-3xl font-playfair font-bold text-pink-500">SG Esthétique</a>
+      <div class="hidden md:flex space-x-6 font-semibold text-white text-sm">
+        <a href="index.html" class="hover:text-pink-400">Accueil</a>
+        <a href="tarifs.html" class="hover:text-pink-400">Tarifs</a>
+        <a href="rdv.html" class="hover:text-pink-400">RDV</a>
+        <a href="promo.html" class="hover:text-pink-400">Promo</a>
+        <a href="contact.html" class="hover:text-pink-400">Contact</a>
+        <a href="services.html" class="hover:text-pink-400">Services Disponibles</a>
+        <a href="espace-client.html" class="hover:text-pink-400">Espace Client</a>
+        <a href="espace-estheticienne.html" class="hover:text-pink-400">Espace Esthéticienne</a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-pink-500 focus:outline-none">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden bg-black text-white px-4 pb-4 space-y-3 text-center font-semibold text-lg">
+      <a href="index.html" class="block hover:text-pink-400">Accueil</a>
+      <a href="tarifs.html" class="block hover:text-pink-400">Tarifs</a>
+      <a href="rdv.html" class="block hover:text-pink-400">RDV</a>
+      <a href="promo.html" class="block hover:text-pink-400">Promo</a>
+      <a href="contact.html" class="block hover:text-pink-400">Contact</a>
+      <a href="services.html" class="block hover:text-pink-400">Services Disponibles</a>
+      <a href="espace-client.html" class="block hover:text-pink-400">Espace Client</a>
+      <a href="espace-estheticienne.html" class="block hover:text-pink-400">Espace Esthéticienne</a>
+    </div>
+  </header>
+
+  <script src="script.js"></script>
+
+  <!-- Pages content below -->
+  <main id="accueil" class="container mx-auto flex-grow px-4 py-20 flex flex-col items-center justify-center text-center">
+    <h1 class="text-4xl md:text-6xl font-playfair font-bold text-pink-500 mb-8">
+      Sublimez votre regard avec SG Esthétique
+    </h1>
+    <a href="espace-client.html#creation-compte" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-8 rounded-md transition">
+      Prendre rendez-vous
+    </a>
+  </main>
+
+  <footer class="bg-black border-t border-pink-600 text-gray-400 text-center py-6 mt-auto">
+    &copy; 2024 SG Esthétique - Tous droits réservés
+  </footer>
+</body>
+</html>
